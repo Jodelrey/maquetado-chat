@@ -1,0 +1,23 @@
+.contacts{
+    padding-top: 20px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: $fontPage;
+    font-size: $fontSizeChat;
+    background-color: $backgroundContact;
+    height: 900px;
+}
+
+.contact{
+    margin: 10px;
+}
+.contact.contact-active{
+    background-color: white;
+    width: 100%;
+    
+}

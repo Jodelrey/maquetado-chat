@@ -1,0 +1,42 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.chat {    
+    .user1-message{
+        position: relative;
+       
+            img{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .message{
+                position: absolute;
+                top: 40px;
+                right: 82px;
+
+            }
+    }
+
+    .user2-message{
+        position: relative;
+        
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .message{
+                position: absolute;
+                top: 40px;
+                left: 82px;
+
+            }
+    }
+    
+}

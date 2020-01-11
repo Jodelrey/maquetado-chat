@@ -1,0 +1,17 @@
+@mixin flex-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin radiusUser1{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@mixin radiusUser2{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
