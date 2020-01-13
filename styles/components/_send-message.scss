@@ -1,0 +1,27 @@
+.send-message{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid $borderColor;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-bottom: 2px solid $borderColor;
+    @media (max-width: 900px){
+        
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        z-index: 1000;
+
+    }
+    .far, .fas{
+        font-size: 25px;
+    }
+    .message {
+        width: 50%;
+        border-radius: 15px;
+        line-height: 30px;
+        padding-left: 7px;
+        border: 1px solid grey;
+    }
+}

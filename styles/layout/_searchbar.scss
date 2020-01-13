@@ -3,12 +3,23 @@
     @include flex-search;
     width: 90%;
     height: 80px;
+    border-bottom: 2px solid $borderColor;  
+    @media (max-width: 900px) {
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        z-index: 1000;
+        justify-content: space-evenly;
+       
+        
+    }
     .search{
         width: 17%;
         @include flex-search;
         .input-search{
             position: relative; 
             .input{
+            margin-left: 5px;
             padding-left: 20px;
             width: 150px;
                 }            
@@ -21,19 +32,15 @@
 
 .search-icon{
     position: absolute;
-    left: 5px;
+    left: 8px;
     top: calc(50% - 8px);
     
 }
 
 .message-icons{
-    width: 4%;
+    width: 7%;
+    
     @include flex-search;
-    .chat-icon{
-        position: relative;
-    }
+    
 }
 
-.menu-bar{
-    position: relative;
-}

@@ -1,5 +1,4 @@
-.contacts{
-    padding-top: 20px;
+.contacts{    
     width: 10%;
     display: flex;
     flex-direction: column;
@@ -10,11 +9,15 @@
     font-family: $fontPage;
     font-size: $fontSizeChat;
     background-color: $backgroundContact;
-    height: 900px;
+    height: 950px;
+    @media (max-width: 990px){
+        display: none;
+    }
 }
 
 .contact{
     margin: 10px;
+    padding: 5px 0;
 }
 .contact.contact-active{
     background-color: white;

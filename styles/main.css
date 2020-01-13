@@ -17,27 +17,33 @@
 
 .chat {
   width: 60%;
-  height: 920px;
-  border-right: 2px solid #6f9a8d; }
+  height: 940px;
+  border-right: 2px solid #6f9a8d;
+  padding-top: 10px; }
+  @media (max-width: 900px) {
+    .chat {
+      height: 1000px; } }
   .chat .user1-message, .chat .user2-message {
     font-family: "Varela Round", sans-serif;
     font-size: 15px;
     width: 80%; }
-
-.chat .user1-message .message {
-  background-color: #6f7399;
-  width: 80%;
-  padding: 5px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px; }
-.chat .user2-message .message {
-  background-color: #a19395;
-  width: 80%;
-  padding: 5px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px; }
+    @media (max-width: 900px) {
+      .chat .user1-message, .chat .user2-message {
+        margin: 15px 0; } }
+  .chat .user1-message .message {
+    background-color: #6f7399;
+    width: 80%;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; }
+  .chat .user2-message .message {
+    background-color: #a19395;
+    width: 80%;
+    padding: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px; }
 
 .contact img {
   border-radius: 50%;
@@ -61,8 +67,30 @@
   border-radius: 8px;
   border: 1px solid grey; }
 
+.send-message {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 2px solid #6f9a8d;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-bottom: 2px solid #6f9a8d; }
+  @media (max-width: 900px) {
+    .send-message {
+      position: fixed;
+      bottom: 0;
+      background-color: white;
+      z-index: 1000; } }
+  .send-message .far, .send-message .fas {
+    font-size: 25px; }
+  .send-message .message {
+    width: 50%;
+    border-radius: 15px;
+    line-height: 30px;
+    padding-left: 7px;
+    border: 1px solid grey; }
+
 .contacts {
-  padding-top: 20px;
   width: 10%;
   display: flex;
   flex-direction: column;
@@ -73,10 +101,14 @@
   font-family: "Varela Round", sans-serif;
   font-size: 15px;
   background-color: #e5dfdf;
-  height: 900px; }
+  height: 950px; }
+  @media (max-width: 990px) {
+    .contacts {
+      display: none; } }
 
 .contact {
-  margin: 10px; }
+  margin: 10px;
+  padding: 5px 0; }
 
 .contact.contact-active {
   background-color: white;
@@ -87,7 +119,15 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  height: 80px; }
+  height: 80px;
+  border-bottom: 2px solid #6f9a8d; }
+  @media (max-width: 900px) {
+    .header-search-bar {
+      width: 100%;
+      position: fixed;
+      background-color: white;
+      z-index: 1000;
+      justify-content: space-evenly; } }
   .header-search-bar .search {
     width: 17%;
     display: flex;
@@ -96,60 +136,61 @@
     .header-search-bar .search .input-search {
       position: relative; }
       .header-search-bar .search .input-search .input {
+        margin-left: 5px;
         padding-left: 20px;
         width: 150px; }
 
 .search-icon {
   position: absolute;
-  left: 5px;
+  left: 8px;
   top: calc(50% - 8px); }
 
 .message-icons {
-  width: 4%;
+  width: 7%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .message-icons .chat-icon {
-    position: relative; }
-
-.menu-bar {
-  position: relative; }
 
 .chat {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center; }
-
-.chat .user1-message {
-  position: relative; }
-  .chat .user1-message img {
-    position: absolute;
-    top: 0;
-    right: 0; }
-  .chat .user1-message .message {
-    position: absolute;
-    top: 40px;
-    right: 82px; }
-.chat .user2-message {
-  position: relative; }
-  .chat .user2-message img {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .chat .user2-message .message {
-    position: absolute;
-    top: 40px;
-    left: 82px; }
+  @media (max-width: 900px) {
+    .chat {
+      margin-top: 75px;
+      border-right: none; } }
+  .chat .user1-message {
+    position: relative; }
+    .chat .user1-message img {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .chat .user1-message .message {
+      position: absolute;
+      top: 40px;
+      right: 82px; }
+  .chat .user2-message {
+    position: relative; }
+    .chat .user2-message img {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .chat .user2-message .message {
+      position: absolute;
+      top: 40px;
+      left: 82px; }
 
 .call-options {
-  height: 700px;
+  height: 940px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  align-content: spa;
   width: 30%; }
+  @media (max-width: 990px) {
+    .call-options {
+      display: none; } }
 
 .contact-options, .call-icons {
   display: flex;
@@ -174,7 +215,6 @@ body {
   width: 90%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-top: 2px solid #6f9a8d; }
+  align-items: center; }
 
 /*# sourceMappingURL=main.css.map */

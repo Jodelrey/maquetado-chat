@@ -1,19 +1,27 @@
 .chat {
     width: 60%;
-    height: 920px;
+    height: 940px;
     border-right: 2px solid $borderColor;
+    padding-top: 10px;
+    @media (max-width: 900px){
+        height: 1000px;
+    }
+
+   
+    
     
     .user1-message, .user2-message {
             font-family: $fontPage;
             font-size: $fontSizeChat;
-            width: 80%;
-        
+            width: 80%;  
+            @media (max-width: 900px){
+                margin: 15px 0;
+            }
+            
+                  
         }
     
-}
-
-.chat {    
-    .user1-message{
+        .user1-message{
             .message{
                 background-color: $backgroundChat1;                
                 width: 80%;
@@ -33,3 +41,7 @@
     }
     
 }
+
+   
+    
+

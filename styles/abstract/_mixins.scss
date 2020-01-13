@@ -4,6 +4,7 @@
     align-items: center;
 }
 
+//se que estos mixins no son necesarios,porque solo se aplica una vez, los hice para practicar el uso
 @mixin radiusUser1{
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;

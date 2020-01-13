@@ -1,12 +1,12 @@
 .chat{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    
-}
-
-.chat {    
+    @media (max-width: 900px){
+        margin-top: 75px;
+        border-right: none;
+    }
     .user1-message{
         position: relative;
        
@@ -38,5 +38,9 @@
 
             }
     }
+    
+
+
+   
     
 }
