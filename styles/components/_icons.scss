@@ -1,12 +1,12 @@
 .fas, .far{
     color: gray;
+    transition: 0.3s;
+    &:hover{
+        color: #29a19c;
+        transform: scale(1.2);
+    }
 }
 
-.signal {
-    border-radius: 50%;
-    width: 15px;
-    background-color:red;
-}
 
 .fa-phone-square-alt, .fa-phone-slash{
     font-size: 50px;

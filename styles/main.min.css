@@ -1,5 +1,5 @@
-.far,.fas{color:gray}
-.signal{border-radius:50%;width:15px;background-color:red}
+.far,.fas{color:gray;transition:.3s}
+.far:hover,.fas:hover{color:#29a19c;transform:scale(1.2)}
 .fa-phone-slash,.fa-phone-square-alt{font-size:50px}
 .fa-phone-square-alt{color:#58b368}
 .fa-phone-slash{color:#fe5f55}
