@@ -21,7 +21,8 @@
   padding-top: 10px; }
   @media (max-width: 900px) {
     .chat {
-      height: 1000px; } }
+      height: 1200px;
+      padding-bottom: 80px; } }
   .chat .user1-message, .chat .user2-message {
     font-family: "Varela Round", sans-serif;
     font-size: 15px;
@@ -50,7 +51,8 @@
 
 .user1-message img, .user2-message img {
   border-radius: 50%;
-  width: 80px; }
+  width: 80px;
+  height: 80px; }
 
 .contact-image img {
   border-radius: 50%;
@@ -160,25 +162,14 @@
       margin-top: 75px;
       border-right: none; } }
   .chat .user1-message {
-    position: relative; }
-    .chat .user1-message img {
-      position: absolute;
-      top: 0;
-      right: 0; }
+    display: flex;
+    flex-direction: row-reverse; }
     .chat .user1-message .message {
-      position: absolute;
-      top: 40px;
-      right: 82px; }
+      margin-top: 35px; }
   .chat .user2-message {
-    position: relative; }
-    .chat .user2-message img {
-      position: absolute;
-      top: 0;
-      left: 0; }
+    display: flex; }
     .chat .user2-message .message {
-      position: absolute;
-      top: 40px;
-      left: 82px; }
+      margin-top: 35px; }
 
 .call-options {
   height: 940px;

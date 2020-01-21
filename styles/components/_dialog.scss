@@ -4,7 +4,8 @@
     border-right: 2px solid $borderColor;
     padding-top: 10px;
     @media (max-width: 900px){
-        height: 1000px;
+        height: 1200px;
+        padding-bottom: 80px;
     }
 
    
@@ -23,7 +24,7 @@
     
         .user1-message{
             .message{
-                background-color: $backgroundChat1;                
+                background-color: $backgroundChat1;               
                 width: 80%;
                 padding: 5px;
                 @include radiusUser1();
